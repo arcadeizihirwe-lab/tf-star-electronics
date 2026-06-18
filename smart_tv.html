@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TF STAR - Smart TVs</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#000,#222);
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    color:gold;
+    font-size:3rem;
+}
+
+header p{
+    color:#ccc;
+    margin-top:10px;
+}
+
+/* NAV */
+nav{
+    background:#111;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* HERO */
+.hero{
+    height:50vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1593784991095-a205069470b6");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:2.8rem;
+}
+
+/* PRODUCTS */
+.container{
+    width:90%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+.card{
+    background:#1c1c1c;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+    box-shadow:0 0 15px rgba(255,215,0,0.1);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(255,215,0,0.3);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    color:gold;
+    margin-bottom:10px;
+}
+
+.card ul{
+    padding-left:20px;
+    color:#ddd;
+    margin-bottom:15px;
+}
+
+.price{
+    background:gold;
+    color:black;
+    padding:10px;
+    text-align:center;
+    font-weight:bold;
+    font-size:18px;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    color:#ccc;
+}
+
+    .cart-btn{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    background:gold;
+    color:black;
+    font-size:16px;
+    font-weight:bold;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.cart-btn:hover{
+    background:#ffffff;
+    transform:scale(1.05);
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>TF STAR SMART TVs</h1>
+    <p>All Sizes Available – HD, Full HD & 4K Ultra HD</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="speakers.html">speakers</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">contact</a>
+    <a href="cart.html">🛒 Cart</a>
+</nav>
+
+<section class="hero">
+    <h2>Premium Smart TV Collection</h2>
+</section>
+
+<div class="container">
+
+    <!-- 32 INCH -->
+    <div class="card">
+        <img src="smarttv.webp" alt="32 inch TV">
+        <div class="card-content">
+            <h3>32" Smart TV</h3>
+            <ul>
+                <li>HD Display</li>
+                <li>Android TV</li>
+                <li>Wi-Fi Enabled</li>
+                <li>2 HDMI Ports</li>
+            </ul>
+            <div class="price">$180</div>
+
+             <button class="cart-btn"
+        onclick="addToCart('32 Inch Smart TV',180)">
+            🛒 Add to Cart
+        </button>
+
+        </div>
+    </div>
+
+    <!-- 43 INCH -->
+    <div class="card">
+        <img src="smarttv.webp" alt="43 inch TV">
+        <div class="card-content">
+            <h3>43" Smart TV</h3>
+            <ul>
+                <li>Full HD Resolution</li>
+                <li>Netflix & YouTube</li>
+                <li>Bluetooth Support</li>
+                <li>Android OS</li>
+            </ul>
+            <div class="price">$280</div>
+
+            <button class="cart-btn"
+onclick="addToCart('43 Inch Smart TV',280)">
+🛒 Add to Cart
+</button>
+
+
+        </div>
+    </div>
+
+    <!-- 50 INCH -->
+    <div class="card">
+        <img src="smarttv.webp" alt="50 inch TV">
+        <div class="card-content">
+            <h3>50" 4K Smart TV</h3>
+            <ul>
+                <li>Ultra HD 4K</li>
+                <li>HDR Support</li>
+                <li>Voice Control</li>
+                <li>Google TV</li>
+            </ul>
+            <div class="price">$420</div>
+
+             <button class="cart-btn"
+        onclick="addToCart('50 Inch Smart TV',420)">
+            🛒 Add to Cart
+        </button>
+
+        </div>
+    </div>
+
+    <!-- 55 INCH -->
+    <div class="card">
+        <img src="smarttv.webp" alt="55 inch TV">
+        <div class="card-content">
+            <h3>55" Smart TV</h3>
+            <ul>
+                <li>4K Ultra HD</li>
+                <li>Dolby Audio</li>
+                <li>Smart Apps</li>
+                <li>Voice Assistant</li>
+            </ul>
+            <div class="price">$550</div>
+
+             <button class="cart-btn"
+        onclick="addToCart('55 Inch Smart TV',550)">
+            🛒 Add to Cart
+        </button>
+
+        </div>
+    </div>
+
+    <!-- 65 INCH -->
+    <div class="card">
+        <img src="smarttv.webp" alt="65 inch TV">
+        <div class="card-content">
+            <h3>65" Smart TV</h3>
+            <ul>
+                <li>4K UHD Display</li>
+                <li>Dolby Vision</li>
+                <li>Game Mode</li>
+                <li>Google Assistant</li>
+            </ul>
+            <div class="price">$780</div>
+
+             <button class="cart-btn"
+        onclick="addToCart('65 Inch Smart TV',780)">
+            🛒 Add to Cart
+        </button>
+
+        </div>
+    </div>
+
+    <!-- 75 INCH -->
+    <div class="card">
+        <img src="smarttv.webp" alt="75 inch TV">
+        <div class="card-content">
+            <h3>75" QLED Smart TV</h3>
+            <ul>
+                <li>QLED Display</li>
+                <li>120Hz Refresh Rate</li>
+                <li>Dolby Atmos</li>
+                <li>Gaming Mode</li>
+            </ul>
+            <div class="price">$1200</div>
+
+             <button class="cart-btn"
+        onclick="addToCart('75 Inch Smart TV',12000)">
+            🛒 Add to Cart
+        </button>
+
+        </div>
+    </div>
+
+     <div class="card">
+        <img src="smarttv.webp" alt="75 inch TV">
+        <div class="card-content">
+            <h3>85" QLED Smart TV</h3>
+            <ul>
+                <li>QLED Display</li>
+                <li>120Hz Refresh Rate</li>
+                <li>Dolby Atmos</li>
+                <li>Gaming Mode</li>
+            </ul>
+            <div class="price">$1500</div>
+
+             <button class="cart-btn"
+        onclick="addToCart('85 Inch Smart TV',1500)">
+            🛒 Add to Cart
+        </button>
+
+        </div>
+    </div>
+
+     <div class="card">
+        <img src="smarttv.webp" alt="75 inch TV">
+        <div class="card-content">
+            <h3>100" QLED Smart TV</h3>
+            <ul>
+                <li>QLED Display</li>
+                <li>120Hz Refresh Rate</li>
+                <li>Dolby Atmos</li>
+                <li>Gaming Mode</li>
+            </ul>
+            <div class="price">$2000</div>
+
+             <button class="cart-btn"
+        onclick="addToCart('100 Inch Smart TV',2000)">
+            🛒 Add to Cart
+        </button>
+
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 TF STAR Electronics | Smart TVs • Speakers • Home Entertainment</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

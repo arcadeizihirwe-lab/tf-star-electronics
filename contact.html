@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact TF STAR</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#0b0b0b;
+    color:white;
+}
+
+/* NAV */
+nav{
+    background:#111;
+    text-align:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* HERO */
+.hero{
+    height:45vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1556761175-4b46a572b786");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:3rem;
+    color:gold;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+.card{
+    background:#161616;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(255,215,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(255,215,0,0.3);
+}
+
+.card h2{
+    color:gold;
+    margin-bottom:15px;
+}
+
+/* INPUTS */
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    border:none;
+    border-radius:5px;
+    outline:none;
+}
+
+textarea{
+    height:120px;
+    resize:none;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:gold;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:white;
+}
+
+/* CONTACT INFO */
+.info p{
+    margin:10px 0;
+    color:#ccc;
+}
+
+/* SOCIAL */
+.social a{
+    display:block;
+    margin:10px 0;
+    padding:10px;
+    background:#222;
+    border-radius:8px;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.social a:hover{
+    background:gold;
+    color:black;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="smart_tv.html">Smart TVs</a>
+    <a href="speakers.html">Speakers</a>
+    <a href="about.html">About</a>
+</nav>
+
+<section class="hero">
+    <h1>Contact TF STAR</h1>
+</section>
+
+<div class="container">
+
+    <!-- CONTACT FORM -->
+    <div class="card">
+        <h2>Send Us a Message</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Phone Number">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- CONTACT INFO -->
+    <div class="card info">
+        <h2>Contact Info</h2>
+        <p>📞 Phone: +250 781414192</p>
+        <p>📧 Email: info@tfstar.com</p>
+        <p>📍 Location: Kigali, Rwanda</p>
+        <p>🕒 Open: 8AM - 8PM (Mon - Sun)</p>
+    </div>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="card social">
+        <h2>Follow Us</h2>
+
+        <a href="#">📱 WhatsApp</a>
+        <a href="#">📘 Facebook</a>
+        <a href="#">📸 Instagram</a>
+        <a href="#">🎵 TikTok</a>
+        <a href="#">▶ YouTube</a>
+        <a href="#">✈ Telegram</a>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 TF STAR Electronics | Smart TVs • Speakers • Home Entertainment</p>
+</footer>
+
+</body>
+</html>

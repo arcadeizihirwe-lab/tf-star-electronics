@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TF STAR Electronics</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Header */
+header{
+    background:#000000;
+    color:rgb(17, 7, 110);
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size: 50px;
+    color:gold;
+}
+
+header p{
+    margin-top:10px;
+    color:#ddd;
+}
+
+/* Navigation */
+nav{
+    background:#222;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* Hero Section */
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1593784991095-a205069470b6");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h2{
+    font-size:60px;
+}
+
+.hero-content p{
+    font-size:24px;
+    margin:20px 0;
+}
+
+.btn{
+    background:gold;
+    color:black;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* Products Section */
+.products{
+    padding:60px 20px;
+    text-align:center;
+    background-color:rgb(204, 212, 219);
+}
+
+.products h2{
+    font-size:35px;
+    margin-bottom:30px;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    background-color: rgb(204, 212, 219);
+}
+
+.card{
+    width:320px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+/* About Section */
+.about{
+    background:#584e4e;
+    padding:50px;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:20px;
+}
+
+/* Footer */
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+footer h3{
+    color:gold;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>TF STAR  TECHNOLOGIES</h1>
+    <p>Your Trusted Electronics Store</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="smart_tv.html">Smart TVs</a>
+    <a href="speakers.html">Speakers</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Welcome to TF STAR</h2>
+        <p>Quality Smart TVs of All Sizes & Premium Sound Systems</p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<section class="products">
+    <h2>Featured Products</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1461151304267-38535e780c79" alt="Smart TV">
+            <h3>Smart TVs</h3>
+            <p>Available in 24", 32", 43", 50", 55", 65", 75", and 85" sizes with HD, Full HD, and 4K displays.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d" alt="Speaker">
+            <h3>Bluetooth Speakers</h3>
+            <p>Enjoy powerful sound with portable and home Bluetooth speaker systems.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04" alt="Home Theater">
+            <h3>Home Theater Systems</h3>
+            <p>Transform your home into a cinema with our premium surround sound systems.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="about">
+    <h2>Why Choose TF STAR?</h2>
+    <p>
+        TF STAR specializes in selling high-quality Smart TVs and Speakers.
+        We provide affordable prices, excellent customer service, and the latest
+        entertainment technology for your home and business.
+    </p>
+</section>
+
+<footer>
+    <h3>TF STAR Electronics</h3>
+    <p>Smart TVs • Speakers • Home Theater Systems</p>
+    <p>Phone: +250 781414192</p>
+    <p>Email: info@tfstar.com</p>
+    <p>&copy; 2026 TF STAR. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TF STAR - Speakers</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#000,#222);
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    color:gold;
+    font-size:3rem;
+}
+
+header p{
+    color:#ccc;
+    margin-top:10px;
+}
+
+/* NAV */
+nav{
+    background:#111;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* HERO */
+.hero{
+    height:50vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1545454675-3531b543be5d");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:2.8rem;
+}
+
+/* PRODUCTS GRID */
+.container{
+    width:90%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+.card{
+    background:#1c1c1c;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+    box-shadow:0 0 15px rgba(255,215,0,0.1);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(255,215,0,0.3);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    color:gold;
+    margin-bottom:10px;
+}
+
+.card ul{
+    padding-left:20px;
+    color:#ddd;
+    margin-bottom:15px;
+}
+
+.price{
+    background:gold;
+    color:black;
+    padding:10px;
+    text-align:center;
+    font-weight:bold;
+    font-size:18px;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    color:#ccc;
+}
+.cart-btn{
+    width:100%;
+    margin-top:15px;
+    padding:12px;
+    background:gold;
+    color:black;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.cart-btn:hover{
+    background:#fff;
+    transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>TF STAR SPEAKERS</h1>
+    <p>Powerful Sound Systems for Home & Events</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="smart_tv.html">smart tv</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">🛒 Cart</a>
+</nav>
+
+<section class="hero">
+    <h2>Feel the Power of Sound</h2>
+</section>
+
+<div class="container">
+
+    <!-- BLUETOOTH SPEAKER -->
+    <div class="card">
+        <img src="speaker.jpeg">
+        <div class="card-content">
+            <h3>Bluetooth Speaker</h3>
+            <ul>
+                <li>Portable Design</li>
+                <li>Wireless Bluetooth</li>
+                <li>Rechargeable Battery</li>
+                <li>Deep Bass Sound</li>
+            </ul>
+            <div class="price">$80</div>
+            <button class="cart-btn"
+onclick="addToCart('Bluetooth Speaker',80)">
+🛒 Add to Cart
+</button>
+        </div>
+    </div>
+
+    <!-- SOUNDBAR -->
+    <div class="card">
+        <img src="speaker.jpeg" alt="Soundbar">
+        <div class="card-content">
+            <h3>Premium Soundbar</h3>
+            <ul>
+                <li>Clear HD Audio</li>
+                <li>Bluetooth & AUX</li>
+                <li>Wall Mount Ready</li>
+                <li>Deep Bass System</li>
+            </ul>
+            <div class="price">$150</div>
+            <button class="cart-btn"
+onclick="addToCart('sound bar',150)">
+🛒 Add to Cart
+</button>
+        </div>
+    </div>
+
+    <!-- HOME THEATER -->
+    <div class="card">
+        <img src="speaker.jpeg" alt="Home Theater">
+        <div class="card-content">
+            <h3>Home Theater System</h3>
+            <ul>
+                <li>5.1 Surround Sound</li>
+                <li>Powerful Subwoofer</li>
+                <li>Bluetooth Enabled</li>
+                <li>Cinema Experience</li>
+            </ul>
+            <div class="price">$450</div>
+            <button class="cart-btn"
+onclick="addToCart('home theater System',450)">
+🛒 Add to Cart
+</button>
+        </div>
+    </div>
+
+    <!-- PARTY SPEAKER -->
+    <div class="card">
+        <img src="speaker.jpeg" alt="Party Speaker">
+        <div class="card-content">
+            <h3>Party Speaker</h3>
+            <ul>
+                <li>LED Lights</li>
+                <li>Super Bass Boost</li>
+                <li>Bluetooth & USB</li>
+                <li>Long Battery Life</li>
+            </ul>
+            <div class="price">$250</div>
+            <button class="cart-btn"
+onclick="addToCart('party speaker',250)">
+🛒 Add to Cart
+</button>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 TF STAR Electronics | Smart TVs • Speakers • Home Entertainment</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
